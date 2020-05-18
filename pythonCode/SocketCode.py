@@ -1,3 +1,5 @@
+########Details###########
+
 import serial 
 isConnected=False
 
