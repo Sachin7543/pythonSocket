@@ -17,7 +17,7 @@ def reConnect():
 
         
 reConnect()
-host="192.168.1.101"
+host="192.168.1.106"
 port = 4000
 s=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
 s.bind((host,port))
@@ -32,7 +32,8 @@ while True:
             read = ser.readline()
             strR=read.decode()
             newStr=strR.rstrip()
-            c.send(newStr.encode())
+            b1 = bytearray(newStr,'utf-8')
+            c.send(b1)
         else:
             #print(isConnected)
             reConnect()
