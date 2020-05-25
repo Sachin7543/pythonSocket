@@ -17,7 +17,7 @@ def reConnect():
 
         
 reConnect()
-host="192.168.1.106"
+host="localhost"
 port = 4000
 s=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
 s.bind((host,port))
