@@ -20,7 +20,7 @@ void loop() {
   String stringThree = String(Value2, HEX);
   int Value3 = analogRead(A3);
   String stringFour = String(Value3, HEX);
-  String byte_data = String(sizeof(Value));
+  String byte_data  = String(sizeof(Value));
   // print out the value you read:
   String data = (stringOne + "," + stringTwo + "," + stringThree + "," + stringFour);
   String data1 = ("0xAA," + byte_data + "," + data + ",0xAB");;
